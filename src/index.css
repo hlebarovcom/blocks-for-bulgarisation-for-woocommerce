@@ -1,4 +1,4 @@
-.woo-bg-dual-totals__rate {
+.bulg-blocks-dual-totals__rate {
 	font-size: 0.75em;
 	opacity: 0.6;
 	margin: 6px 0 0;
@@ -6,7 +6,7 @@
 }
 
 /* Injected secondary currency in the Subtotal row */
-.woo-bg-subtotal-secondary {
+.bulg-blocks-subtotal-secondary {
 	font-size: inherit;
 	font-weight: inherit;
 }

@@ -11,14 +11,14 @@ import { __ } from '@wordpress/i18n';
 import './index.css';
 
 const { locale = '', currency: currencyCode = '', debug = false } =
-	window.wooBgBlocks || {};
+	window.bulgBlocksData || {};
 
 const EUR_RATE = 1.95583;
 
 function log( ...args ) {
 	if ( debug ) {
 		// eslint-disable-next-line no-console
-		console.log( '[woo-bg-blocks]', ...args );
+		console.log( '[bulg-blocks]', ...args );
 	}
 }
 
@@ -58,7 +58,7 @@ function getCartTotalsSync() {
 	return select( 'wc/store/cart' )?.getCartTotals?.() || null;
 }
 
-registerCheckoutFilters( 'woo-bg-blocks', {
+registerCheckoutFilters( 'bulg-blocks', {
 	// Per-item unit price in the cart/checkout/mini-cart table.
 	cartItemPrice: ( value, _ext, args ) => {
 		const { cartItem } = args || {};
@@ -120,11 +120,11 @@ function buildSecondaryText( totals ) {
 }
 
 function injectIntoValueEl( valueEl, secondary ) {
-	const existing = valueEl.querySelector( '.woo-bg-subtotal-secondary' );
+	const existing = valueEl.querySelector( '.bulg-blocks-subtotal-secondary' );
 	if ( existing?.textContent === ` ${ secondary }` ) return;
 	if ( existing ) existing.remove();
 	const span = document.createElement( 'span' );
-	span.className = 'woo-bg-subtotal-secondary';
+	span.className = 'bulg-blocks-subtotal-secondary';
 	span.textContent = ` ${ secondary }`;
 	valueEl.appendChild( span );
 }
@@ -239,8 +239,8 @@ function RateNote() {
 
 	return createElement(
 		'p',
-		{ className: 'woo-bg-dual-totals__rate' },
-		__( 'Fixed exchange rate: 1 EUR = 1.95583 BGN', 'woo-bg-blocks' )
+		{ className: 'bulg-blocks-dual-totals__rate' },
+		__( 'Fixed exchange rate: 1 EUR = 1.95583 BGN', 'blocks-for-bulgarisation-for-woocommerce' )
 	);
 }
 
@@ -248,12 +248,12 @@ function OrderMetaFill() {
 	return createElement( ExperimentalOrderMeta, null, createElement( RateNote, null ) );
 }
 
-registerPlugin( 'woo-bg-blocks-checkout', {
+registerPlugin( 'bulg-blocks-checkout', {
 	render: OrderMetaFill,
 	scope: 'woocommerce-checkout',
 } );
 
-registerPlugin( 'woo-bg-blocks-cart', {
+registerPlugin( 'bulg-blocks-cart', {
 	render: OrderMetaFill,
 	scope: 'woocommerce-cart',
 } );

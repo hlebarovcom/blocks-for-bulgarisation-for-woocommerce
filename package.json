@@ -1,7 +1,7 @@
 {
-	"name": "woo-bg-blocks",
+	"name": "blocks-for-bulgarisation-for-woocommerce",
 	"version": "1.0.0",
-	"description": "WooCommerce Blocks – BGN/EUR dual price extension",
+	"description": "Dual BGN/EUR price display for the WooCommerce Cart and Checkout blocks",
 	"license": "GPL-2.0-or-later",
 	"scripts": {
 		"build": "wp-scripts build --webpack-src-dir=src --output-path=build",
