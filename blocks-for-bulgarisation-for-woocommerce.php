@@ -15,12 +15,6 @@
 
 defined( 'ABSPATH' ) || exit;
 
-add_action( 'init', 'bulg_blocks_load_textdomain' );
-
-function bulg_blocks_load_textdomain() {
-	load_plugin_textdomain( 'blocks-for-bulgarisation-for-woocommerce', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
-}
-
 add_action( 'admin_notices', 'bulg_blocks_admin_notice' );
 
 function bulg_blocks_admin_notice() {
