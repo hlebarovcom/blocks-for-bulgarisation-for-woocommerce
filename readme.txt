@@ -1,5 +1,5 @@
 === Blocks for Bulgarisation for WooCommerce ===
-Contributors: TODO_WPORG_USERNAME
+Contributors: jdbg
 Tags: woocommerce, bgn, eur, dual-currency, checkout-blocks
 Requires at least: 6.4
 Tested up to: 7.0
