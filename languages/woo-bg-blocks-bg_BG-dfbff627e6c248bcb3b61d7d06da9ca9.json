@@ -1,0 +1,18 @@
+{
+	"translation-revision-date": "2024-01-01T00:00:00+00:00",
+	"generator": "manually",
+	"source": "build/index.js",
+	"domain": "messages",
+	"locale_data": {
+		"messages": {
+			"": {
+				"domain": "messages",
+				"lang": "bg_BG",
+				"plural-forms": "nplurals=2; plural=(n != 1);"
+			},
+			"Fixed exchange rate: 1 EUR = 1.95583 BGN": [
+				"Фиксиран курс: 1 EUR = 1,95583 BGN"
+			]
+		}
+	}
+}

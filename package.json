@@ -1,0 +1,14 @@
+{
+	"name": "woo-bg-blocks",
+	"version": "1.0.0",
+	"description": "WooCommerce Blocks – BGN/EUR dual price extension",
+	"license": "GPL-2.0-or-later",
+	"scripts": {
+		"build": "wp-scripts build --webpack-src-dir=src --output-path=build",
+		"start": "wp-scripts start --webpack-src-dir=src --output-path=build",
+		"lint:js": "wp-scripts lint-js src"
+	},
+	"devDependencies": {
+		"@wordpress/scripts": "^30.0.0"
+	}
+}
