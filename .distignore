@@ -1,0 +1,10 @@
+.git
+.github
+.gitignore
+.distignore
+.DS_Store
+node_modules
+src
+package.json
+package-lock.json
+webpack.config.js
