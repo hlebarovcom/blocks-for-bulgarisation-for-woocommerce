@@ -3,7 +3,7 @@
  * Plugin Name: Blocks for Bulgarisation for WooCommerce
  * Description: Extends the WooCommerce Cart and Checkout blocks with dual BGN/EUR price display, mirroring the Bulgarisation for WooCommerce plugin behaviour for block-based cart/checkout.
  * Author: Jordan Hlebarov
- * Version: 1.0.0
+ * Version: 1.0.1
  * Requires at least: 6.4
  * Requires PHP: 7.4
  * Requires Plugins: woocommerce, bulgarisation-for-woocommerce

@@ -4,7 +4,7 @@ Tags: woocommerce, bgn, eur, dual-currency, checkout-blocks
 Requires at least: 6.4
 Tested up to: 7.0
 Requires PHP: 7.4
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Requires Plugins: woocommerce, bulgarisation-for-woocommerce
@@ -54,10 +54,16 @@ No. It uses the official fixed BGN/EUR peg (1 EUR = 1.95583 BGN), the same rate 
 
 == Changelog ==
 
+= 1.0.1 =
+* Remove discouraged load_plugin_textdomain() call (translations are auto-loaded for WordPress.org-hosted plugins).
+
 = 1.0.0 =
 * Initial release.
 
 == Upgrade Notice ==
+
+= 1.0.1 =
+Minor fix, no functional changes.
 
 = 1.0.0 =
 Initial release.
